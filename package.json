@@ -1,0 +1,37 @@
+{
+  "name": "edu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "build": "babel src -d dist",
+    "prestart": "npm run build",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bootstrap": "^3.3.7",
+    "echarts": "^3.4.0",
+    "ejs": "^3.1.8",
+    "errorhandler": "^1.5.1",
+    "express": "^4.14.1",
+    "font-awesome": "^4.7.0",
+    "formidable": "^2.0.1",
+    "jquery": "^3.1.1",
+    "mongoose": "^6.5.2",
+    "nprogress": "^0.2.0",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/register": "^7.18.9",
+    "nodemon": "^2.0.19"
+  }
+}
